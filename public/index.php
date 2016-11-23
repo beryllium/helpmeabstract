@@ -13,17 +13,17 @@ if (php_sapi_name() === 'cli-server') {
     unset($path);
 }
 
-require_once(__DIR__ . '/vendor/autoload.php');
-Dotenv::load(__DIR__);
+require_once(__DIR__ . '/../vendor/autoload.php');
+Dotenv::load(__DIR__.'/../');
 
 session_start();
 
 $app = new \Slim\Slim([
-    'templates.path' => './views',
-    'debug'          => true
+    'templates.path' => __DIR__.'/../views',
+    'debug'          => false
 ]);
 
-$loader = new Twig_Loader_Filesystem(__DIR__ . '/views');
+$loader = new Twig_Loader_Filesystem(__DIR__ . '/../views');
 $twig = new Twig_Environment($loader);
 
 
