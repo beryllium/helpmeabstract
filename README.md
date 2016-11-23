@@ -1,4 +1,6 @@
-# HelpMeAbstract.com
+# HelpMeResume.com
+
+Based on [HelpMeAbstract](https://github.com/greydnls/helpmeabstract) by Graham Daniels
 
 ## Local Development
 
