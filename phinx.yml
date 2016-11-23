@@ -15,9 +15,9 @@ environments:
 
     development:
         adapter: mysql
-        host: localhost
-        name: helpmeabstract
+        host: 127.0.0.1
+        name: helpmeresume
         user: root
-        pass: 'secret'
+        pass: ''
         port: 3306
         charset: utf8

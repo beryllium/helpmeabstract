@@ -15,7 +15,7 @@
                         <h2 style="color:white">Thank you! </h2>
                         <div id="content" >
                             <p style="color:white; font-size: 20px">
-                                You'll begin receiving abstracts for review shortly.
+                                You'll begin receiving resumes for review shortly.
                             </p>
                             <p class="call-to-action" style="color:white; font-size: 20px">
                                 Wouldn't it be great if our industry was a safe place for all? Please consider supporting <a href="http://codemanifesto.com/">The Code Manifesto</a>.

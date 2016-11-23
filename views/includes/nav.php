@@ -4,7 +4,7 @@
 
         <!-- Logo -->
         <div id="logo">
-            <h1><a href="/">HelpMeAbstract</a></h1>
+            <h1><a href="/">HelpMeResume</a></h1>
         </div>
 
         <!-- Nav -->
@@ -13,7 +13,7 @@
                 <li class="current"><a href="/#about">How It Works</a></li>
 <!--                <li><a href="/#tips">Tips</a></li>-->
                 <li><a href="/volunteer">Become a Volunteer</a></li>
-                <li><a href="/#form">Submit Abstract</a></li>
+                <li><a href="/#form">Submit Resume</a></li>
             </ul>
         </nav>
 

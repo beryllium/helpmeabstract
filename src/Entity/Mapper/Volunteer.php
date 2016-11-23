@@ -1,12 +1,12 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: kayladaniels
+ * User: grahamdaniels
  * Date: 3/25/15
  * Time: 8:29 PM
  */
 
-namespace Kayladnls\Entity\Mapper;
+namespace Greydnls\Entity\Mapper;
 
 use Spot\Mapper;
 

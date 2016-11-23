@@ -19,12 +19,12 @@
                         {% else %}
                         <div id="content" >
                             <p style="color:white; font-size: 20px">
-                                Want to help review abstracts and empower the next generation of speakers? Fantastic!
+                                Want to help review resumes and empower generations of workers? Fantastic!
                             </p>
                             <br>
                             <p style="color:white; font-size: 20px">
-                                Enter your information in the form below. We'll email you a link to new abstracts as
-                                they are submitted. Reply directly in the gist whenever it suits you. Simple!
+                                Enter your information in the form below. We'll email you a link to new resumes as
+                                they are submitted. Reply directly in the Google Doc whenever it suits you. Simple!
                             </p>
                             <br>
                             <p style="color:white; font-size: 20px">

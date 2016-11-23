@@ -29,14 +29,14 @@ $twig = new Twig_Environment($loader);
 
 $cfg = new Config();
 // MySQL
-$cfg->addConnection('mysql', 'mysql://' . $_ENV['DATABASE_USER'] . ':' . $_ENV['DATABASE_PASSWORD'] . '@localhost/helpmeabstract');
+$cfg->addConnection('mysql', 'mysql://' . $_ENV['DATABASE_USER'] . ':' . $_ENV['DATABASE_PASSWORD'] . '@127.0.0.1/helpmeresume');
 $spot = new Locator($cfg);
 
-/** @var Kayladnls\Entity\Mapper\Volunteer $volunteerMapper */
-$volunteerMapper = $spot->mapper('Kayladnls\Entity\Volunteer');
+/** @var Greydnls\Entity\Mapper\Volunteer $volunteerMapper */
+$volunteerMapper = $spot->mapper('Greydnls\Entity\Volunteer');
 
-/** @var Kayladnls\Entity\Mapper\Proposal $proposalMapper */
-$proposalMapper = $spot->mapper('Kayladnls\Entity\Proposal');
+/** @var Greydnls\Entity\Mapper\Resume $resumeMapper */
+$resumeMapper = $spot->mapper('Greydnls\Entity\Resume');
 
 $app->notFound(function () use ($app) {
     $app->redirect('/error');
@@ -87,35 +87,35 @@ $app->post('/submitVolunteer', function () use ($twig, $volunteerMapper) {
 });
 
 
-$app->post('/submitAbstract', function () use ($twig, $proposalMapper, $volunteerMapper) {
+$app->post('/submitResume', function () use ($twig, $resumeMapper, $volunteerMapper) {
 
-    $field_errors = $proposalMapper->verifyFields();
+    $field_errors = $resumeMapper->verifyFields();
 
     if (count($field_errors) == 0) {
         try {
-            $proposal = $proposalMapper->build([
+            $resume = $resumeMapper->build([
                 'fullname'  => $_POST['name'],
                 'email'     => $_POST['email'],
                 'link'      => $_POST['link'],
-                'max_chars' => $_POST['max_chars'],
+                'posting'   => $_POST['posting'],
             ]);
-            $proposalMapper->save($proposal);
+            $resumeMapper->save($resume);
 
             $recipients = $volunteerMapper->getAsCSV();
-            $body = $proposal->getHTML();
+            $body = $resume->getHTML();
 
             $client = new Client();
             $mailgun = new \Mailgun\Mailgun($_ENV['MAILGUN_KEY'], $client);
 
             $message = [
                 'html'    => $body,
-                'subject' => 'Abstract Submitted For Review by ' . $proposal->fullname,
-                'from'    => 'Help Me Abstract <abstract@helpmeabstract.com>',
-                'to'      => "abstract@helpmeabstract.com",
+                'subject' => 'Resume Submitted For Review by ' . $resume->fullname,
+                'from'    => 'Help Me Resume <resume@helpmeresume.com>',
+                'to'      => "resume@helpmeresume.com",
                 'bcc' => $recipients
             ];
 
-            $result = $mailgun->sendMessage("helpmeabstract.com", $message);
+            $result = $mailgun->sendMessage("helpmeresume.com", $message);
 
         } catch (\Exception $e) {
             $error = (!empty($field_error)) ? $field_error : "uh oh, something went wrong";
@@ -123,11 +123,11 @@ $app->post('/submitAbstract', function () use ($twig, $proposalMapper, $voluntee
             echo $twig->render('index.php', ['error' => $error]);
         }
 
-        echo $twig->render('abstract_thankyou.php');
+        echo $twig->render('resume_thankyou.php');
     } else {
         $error = $field_errors['error'];
 
-        echo $twig->render('abstract_error.php', ['error' => $error]);
+        echo $twig->render('resume_error.php', ['error' => $error]);
     }
 
 

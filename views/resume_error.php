@@ -9,7 +9,7 @@
     <div id="banner" class="box container">
         <div class="row">
             <div class="12u">
-                    {%include "/abstract_form.php"%}
+                    {%include "/resume_form.php"%}
             </div>
         </div>
     </div>

@@ -2,7 +2,7 @@
 
 use Phinx\Migration\AbstractMigration;
 
-class CreateAbstractTable extends AbstractMigration
+class CreateResumeTable extends AbstractMigration
 {
     /**
      * Change Method.
@@ -16,10 +16,11 @@ class CreateAbstractTable extends AbstractMigration
     public function change()
     {
         // create the table
-        $table = $this->table('abstracts');
+        $table = $this->table('resumes');
         $table->addColumn('email', 'string', array('limit' => 100))
             ->addColumn('fullname', 'string', array('limit' => 100))
             ->addColumn('link', 'string', array('limit' => 100))
+            ->addColumn('posting', 'string', array('limit' => 100))
             ->addColumn('is_responded_to', 'integer')
             ->addColumn('max_chars', 'integer')
             ->create();

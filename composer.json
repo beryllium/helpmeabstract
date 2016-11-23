@@ -1,13 +1,13 @@
 {
-  "name": "kayladaniels/helpmeabstract",
+  "name": "beryllium/helpmeresume",
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/kayladnls/php-github-api"
+      "url": "https://github.com/greydnls/php-github-api"
     }
   ],
   "require": {
-    "slim/slim": "dev-master",
+    "slim/slim": "~2.6",
     "vlucas/phpdotenv": "~1.1@dev",
     "twig/twig": "~2.0@dev",
     "guzzlehttp/guzzle": "^6.0.0",
@@ -18,12 +18,16 @@
   },
   "authors": [
     {
-      "name": "Kayla Daniels",
-      "email": "kayladnls@gmail.com"
+      "name": "Graham Daniels",
+      "email": "greydnls@gmail.com"
+    },
+    {
+      "name": "Kevin Boyd",
+      "email": "kevin.boyd@gmail.com"
     }
   ],
   "autoload": {
-    "psr-4": { "Kayladnls\\": "src/" }
+    "psr-4": { "Greydnls\\": "src/" }
   },
   "minimum-stability": "stable"
 }

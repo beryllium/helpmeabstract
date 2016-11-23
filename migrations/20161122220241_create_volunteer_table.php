@@ -20,6 +20,7 @@ class CreateVolunteerTable extends AbstractMigration
         $table = $this->table('volunteers');
         $table->addColumn('email', 'string', array('limit' => 100))
             ->addColumn('fullname', 'string', array('limit' => 100))
+            ->addColumn('location', 'string', array('limit' => 100))
             ->addColumn('github_id', 'string', array('limit' => 100))
             ->addColumn('github_username', 'string', array('limit' => 100))
             ->addColumn('profile_image', 'string', array('limit' => 100))

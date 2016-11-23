@@ -6,21 +6,21 @@
             {% if error %}
             <h3><i class="fa fa-exclamation-triangle"></i>{{error}}</h3>
             {% endif %}
-            <h2 style="color:white">Submit Abstract</h2>
+            <h2 style="color:white">Submit Resume</h2>
 
-            <form action="/submitAbstract" method="post">
+            <form action="/submitResume" method="post">
                 <label for="name">Name</label>
                 <input type="text" name="name">
                 <label for="link">Email</label>
                 <input type="text" name="email">
-                <label for="link">Gist Link</label>
+                <label for="link">Google Doc Link<sup>*</sup></label>
                 <input type="text" name="link">
-                <label for="max_chars">Max characters / length allowed for your abstract by the event organisers</label>
-                <input type="text" name="max_chars" maxlength="10" size="2">
+                <label for="link">Job Posting Link</label>
+                <input type="text" name="posting">
 
                 <small style="color:white">
                     <i>
-                        * Please submit your abstracts in Markdown format or ensure that lines are less than 80 chars long
+                        * Please ensure your resume's Google Doc link allows for commenting
                     </i>
                 </small>
                 <br>

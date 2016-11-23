@@ -8,8 +8,8 @@
   <div id="banner" class="box container">
     <div class="row">
       <div class="7u">
-        <h2>So you want to be a speaker?</h2>
-        <p>Get feedback from veteran speakers before you submit</p>
+        <h2>So you want to apply for work?</h2>
+        <p>Get feedback from experienced stakeholders before you submit</p>
       </div>
       <div class="5u">
         <ul>
@@ -37,18 +37,16 @@
           <section class="last">
             <h2>So what's this all about?</h2>
             <p>
-            There is no shortage of brilliant, talented developers in our industry,
-            but making the jump from passionate developer to show stopping speaker
-            is a big hurdle. We want to see new speakers at our conferences,
-            and so this is our effort to make that a reality.
+            Applying for work is stressful and full of second-guessing. We want everyone to
+            have the best advice possible when building their resume.
             </p>
             <p>
-            We can't cure stage fright, or write your slides, but we can give you helpful,
-            constructive feedback on your abstracts, before you submit.
+            We can't cure impostor syndrome, or guarantee an offer, but we can give you helpful,
+            constructive feedback on your resumes, before you submit.
             </p>
             <p>
-            Submit a <a href="http://gist.github.com">gist</a> link in the form below, and
-            we'll get it in front of some of the best speakers in the community.
+            Submit a <a href="https://drive.google.com">Google Doc</a> link in the form below, and
+            we'll get it in front of some of the best reviewers in the community.
             </p>
           </section>
         </div>
@@ -70,7 +68,7 @@
       <!--                        {%include "/tips.php"%}-->
 
 
-      {%include "/abstract_form.php"%}
+      {%include "/resume_form.php"%}
 
     </div>
   </div>

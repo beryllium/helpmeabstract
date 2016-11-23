@@ -1,18 +1,18 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: kayladaniels
+ * User: grahamdaniels
  * Date: 3/25/15
  * Time: 8:26 PM
  */
 
-namespace Kayladnls\Entity;
+namespace Greydnls\Entity;
 
 use Spot\Entity;
 
 class Volunteer extends Entity
 {
-    protected static $mapper = 'Kayladnls\Entity\Mapper\Volunteer';
+    protected static $mapper = 'Greydnls\Entity\Mapper\Volunteer';
     protected static $table = 'volunteers';
 
     public static function fields()

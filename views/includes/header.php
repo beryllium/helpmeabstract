@@ -6,10 +6,10 @@ Verti by HTML5 UP
 -->
 <html>
 <head>
-    <title>HelpMeAbstract</title>
+    <title>HelpMeResume</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <meta name="google-site-verification" content="3efDTMOml7gcCgkaDpmu0lXqW_pBwxGiAEj7H31vhjY" />
+    <meta name="google-site-verification" content="" />
 
     <meta name="description" content="" />
     <meta name="keywords" content="" />
