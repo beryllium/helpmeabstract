@@ -1,6 +1,6 @@
 <div id="form"
-     style="background:#ff4486; width: 97%; padding-bottom:100px;  margin-top:20px;margin-left: 40px;border-radius: 10px;">
-    <div class="8u -2u important(collapse)" style="background:#ff4486">
+     style="background:#4499AA; width: 97%; padding-bottom:100px;  margin-top:20px;margin-left: 40px;border-radius: 10px;">
+    <div class="8u -2u important(collapse)" style="background:#4499AA">
         <!-- Content -->
         <div id="content">
             {% if error %}
@@ -9,13 +9,13 @@
             <h2 style="color:white">Submit Resume</h2>
 
             <form action="/submitResume" method="post">
-                <label for="name">Name</label>
+                <label for="name">Name:</label>
                 <input type="text" name="name">
-                <label for="link">Email</label>
+                <label for="link">Email:</label>
                 <input type="text" name="email">
-                <label for="link">Google Doc Link<sup>*</sup></label>
+                <label for="link">Google Doc Link<sup>*</sup>:</label>
                 <input type="text" name="link">
-                <label for="link">Job Posting Link</label>
+                <label for="link">Job Posting Link <small>(optional)</small>:</label>
                 <input type="text" name="posting">
 
                 <small style="color:white">

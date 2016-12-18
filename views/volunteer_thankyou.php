@@ -9,8 +9,8 @@
     <div id="banner" class="box container">
         <div class="row">
             <div class="12u">
-                <div id="form" style="background:#ff4486; width:100%; padding-bottom:100px; padding-top:50px;  margin-top:20px">
-                    <div class="8u -2u important(collapse)" style="background:#ff4486">
+                <div id="form" style="background:#4499AA; width:100%; padding-bottom:100px; padding-top:50px;  margin-top:20px">
+                    <div class="8u -2u important(collapse)" style="background:#4499AA">
                         <!-- Content -->
                         <h2 style="color:white">Thank you! </h2>
                         <div id="content" >

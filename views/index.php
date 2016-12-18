@@ -8,8 +8,8 @@
   <div id="banner" class="box container">
     <div class="row">
       <div class="7u">
-        <h2>So you want to apply for work?</h2>
-        <p>Get feedback from experienced stakeholders before you submit</p>
+        <h2>So you want to land the perfect job?</h2>
+        <p>Get feedback from experienced stakeholders before you apply.</p>
       </div>
       <div class="5u">
         <ul>
@@ -42,11 +42,11 @@
             </p>
             <p>
             We can't cure impostor syndrome, or guarantee an offer, but we can give you helpful,
-            constructive feedback on your resumes, before you submit.
+            constructive feedback on your resumes, before you apply.
             </p>
             <p>
             Submit a <a href="https://drive.google.com">Google Doc</a> link in the form below, and
-            we'll get it in front of some of the best reviewers in the community.
+            we'll get it in front of some of the best reviewers in your field.
             </p>
           </section>
         </div>
